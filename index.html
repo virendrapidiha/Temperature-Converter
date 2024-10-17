@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+        <h2>About Us</h2>
+        <p>Welcome to Delicious Bites, where we serve the finest dishes made from fresh ingredients!</p>
+        <img src="https://images.unsplash.com/photo-1595853035070-59a39fe84de3?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </section>
+
+    <section id="menu" class="fade-in">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="https://plus.unsplash.com/premium_photo-1674511582428-58ce834ce172?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 1">
+            <h3>Spaghetti Carbonara</h3>
+            <p>A classic Italian dish with creamy sauce and pancetta.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1573821663912-6df460f9c684?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 2">
+            <h3>Margherita Pizza</h3>
+            <p>Fresh tomatoes, mozzarella, and basil on a crispy crust.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1512852939750-1305098529bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 3">
+            <h3>Caesar Salad</h3>
+            <p>Crisp romaine with parmesan and our special dressing.</p>
+        </div>
+    </section>
+
+    <section id="reservation" class="fade-in">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" required>
+
+            <button type="submit">Reserve Table</button>
+        </form>
+        <div id="reservation-message"></div>
+    </section>
+
+    <footer id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <p>Email: info@deliciousbites.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
